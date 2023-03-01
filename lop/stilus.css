@@ -1,0 +1,22 @@
+#tablaEgy{
+    width: 500px;
+    height: 500px;
+}
+
+#tablaKetto{
+    width: 500px;
+    height: 500px;
+    border: solid blue 2px;
+    margin: auto;
+}
+
+#tablaEgy, td, tr{
+    border: red solid 2px;
+    text-align: center;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+
+}

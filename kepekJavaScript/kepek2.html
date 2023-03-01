@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kepek2.css">
+    <script src="kepek2.js"></script>
+</head>
+<body>
+    <div id="vezerlo">
+        <select id="kepValaszto" size="5">
+            <option value="beagle.jpg" onclick="kepCsere(this)">beagle.jpg</option>
+            <option value="inu.jpg" onclick="kepCsere(this)">inu.jpg</option>
+            <option value="pitbull.jpg"  onclick="kepCsere(this)">pitbull.jpg</option>
+            <option value="schnauzer.jpg" onclick="kepCsere(this)">schnauzer.jpg</option>
+            <option value="spaniel.jpg" onclick="kepCsere(this)">spaniel.jpg</option>
+        </select>
+        <div id="kepTaralo">
+            <img src="" alt="">
+        </div>
+        <div>
+            <input type="range" min="10" max="600"  id="magassagValt" onchange="meretezes()">
+            <br>
+            <input type="range" min="10" max="600"  id="szelessegValt" onchange="meretezes()">
+            <br>
+            <select name="ujFilterek" id="ujFilterek" size="4" >
+                <option value="blur(5px)" onclick="effektek(this)">blur</option>
+                <option value="opacity(30%)"  onclick="effektek(this)">opacity</option>
+                <option value="grayscale(100%)" onclick="effektek(this)" >grayscale</option>
+                <option value="sepia(100%)" onclick="effektek(this)" >sepia</option>
+            </select>
+            <select name="ujKivalasztott" id="ujKivalasztott" size="4" >
+            </select>
+        </div>  
+    </div>
+    <div id="divKep">
+        <img id="iksz" src="empty.png" >
+    </div>
+</body>
+</html>
